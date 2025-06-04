@@ -7,14 +7,14 @@ target_sources(usermod_esp32camera INTERFACE
 )
 
 # Add the current directory as an include directory.
-target_include_directories(usermod_esp32camera INTERFACE
-    ${CMAKE_CURRENT_LIST_DIR}
-    ${IDF_PATH}/components/esp32-camera/driver/include
-    ${IDF_PATH}/components/esp32-camera/driver/private_include
-    ${IDF_PATH}/components/esp32-camera/conversions/include
-    ${IDF_PATH}/components/esp32-camera/conversions/private_include
-    ${IDF_PATH}/components/esp32-camera/sensors/private_include
-)
+#target_include_directories(usermod_esp32camera INTERFACE
+#    ${CMAKE_CURRENT_LIST_DIR}
+#    components/esp32-camera/driver/include
+#    components/esp32-camera/driver/private_include
+#    components/esp32-camera/conversions/include
+#    components/esp32-camera/conversions/private_include
+#    components/esp32-camera/sensors/private_include
+#)
 
 target_compile_definitions(usermod_esp32camera INTERFACE)
 
